@@ -7,28 +7,5 @@
 <h2>Projetos</h2>
 
 <div class="row">
-    @foreach (var p in Model)
-    {
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                @if (!string.IsNullOrEmpty(p.ImageUrl))
-                {
-                    <img src="@p.ImageUrl" class="card-img-top" alt="@p.Title" />
-                }
-
-                <div class="card-body">
-                    <h5 class="card-title">@p.Title</h5>
-                    <p class="card-text">@p.Description</p>
-                    <p>
-                        @foreach (var t in p.Tags ?? new string[0])
-                        {
-                            <span class="badge bg-secondary me-1">@t</span>
-                        }
-                    </p>
-                    <a class="btn btn-sm btn-outline-primary me-2" href="@p.RepoUrl" target="_blank">Repositório</a>
-                    <a class="btn btn-sm btn-primary" href="@p.LiveUrl" target="_blank">Ver Demo</a>
-                </div>
-            </div>
-        </div>
-    }
+   <div>vai aaaaaaaaaaaaaa</div>
 </div>
