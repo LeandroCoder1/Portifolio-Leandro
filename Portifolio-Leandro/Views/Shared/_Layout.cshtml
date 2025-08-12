@@ -35,55 +35,16 @@
         <a class="btn" href="#contact">Contatos</a>
     </div>
 
-
     <main>
-        <section id="home" class="tab-section">
-            <p>Conteúdo inicial...</p>
-        </section>
-
-        <section id="about" class="hero">
-            <h1>Sobre mim</h1>
-            <p>Informações sobre mim...</p>
-        </section>
-
-        <section id="projects" class="tab-section">
-            <h1>Projetos</h1>
-            <p>Lista de projetos...</p>
-        </section>
-
-        <section id="contact" class="tab-section">
-            <h1>Contato</h1>
-            <p>Formulário de contato...</p>
-        </section>
+        <section id="home" class="homes">Conteúdo inicial...</section>
+        <section id="about" class="tab-section">Sobre mim...</section>
+        <section id="projects" class="tab-section">Projetos...</section>
+        <section id="contact" class="tab-section">Contato...</section>
     </main>
 
 
 
 
     <script src="~/js/site.js"></script>
-
-    <!-- Script mínimo que evita que o footer fixo sobreponha conteúdo (ajusta padding-bottom dinâmico) -->
-@*     <script>
-        (function () {
-          const footer = document.getElementById('pageFooter');
-          const main = document.getElementById('mainContent');
-
-          function adjustPadding() {
-            if (!footer) return;
-            const footHeight = footer.offsetHeight + 16; // pequeno buffer
-            // aplica padding-bottom no body (ou no main) para garantir que nada fique coberto
-            document.body.style.paddingBottom = footHeight + 'px';
-          }
-
-          // executa ao carregar e ao redimensionar
-          window.addEventListener('load', adjustPadding);
-          window.addEventListener('resize', adjustPadding);
-          // também observa mudanças no layout do footer (caso o conteúdo do footer mude)
-          if (window.ResizeObserver) {
-            new ResizeObserver(adjustPadding).observe(footer);
-          }
-        })();
-    </script> *@
-
 </body>
 </html>

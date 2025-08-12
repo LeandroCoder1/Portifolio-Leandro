@@ -1,3 +1,6 @@
+@charset "utf-8";
+
+
 html {
     font-size: 14px;
 }
@@ -75,9 +78,10 @@ body {
 
 .tab-section {
     display: none;
-    padding: 20px;
 }
 
-.tab-section.active {
-    display: block;
-}
+    .tab-section.active {
+        display: block;
+        color: red;
+        margin-block-start: 17%;
+    }
