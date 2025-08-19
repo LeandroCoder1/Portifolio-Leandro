@@ -50,41 +50,18 @@ body {
 .box {
     width: 98%;
     height: 870px;
-    background: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.1)), linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.1));
-    background-size: 10px 10px;
     padding: 17px;
     color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
 }
 
 .nav-btns {
-    justify-content: space-evenly;
     margin-block-start: -45%;
     margin-inline-start: 66%;
-    background: black;
-    color: white;
+    background: #00000000;
 }
 
 .btn {
-    background: #000000;
     color: #ffffff !important;
-    font-family: cursive;
-    --bs-btn-bg: #0d6efd00;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden
-}
-
-.hero-content {
-    position: relative;
-    z-index: 10;
-    max-width: 980px;
-    padding: 120px 24px 60px;
 }
 
 .tab-section {
@@ -148,4 +125,14 @@ body {
     left: 65%;
     position: sticky;
     border-bottom: none;
+}
+
+.btn-group {
+    margin-block-start: 64vh;
+    left: 13vh;
+}
+
+.btn-group-vertical{
+margin-block-start: 36vh;
+left: 100vh;
 }
