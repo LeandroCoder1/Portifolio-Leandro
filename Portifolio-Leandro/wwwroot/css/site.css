@@ -29,18 +29,29 @@ body {
 }
 
 .name {
-    font-family: cursive;
-    font-size: 50px;
-    margin-top: -12px;
+    font-family: fantasy;
+    font-size: 52px;
+    margin-block-start: -2%;
+    right: 73%;
+    position: fixed;
+    text-shadow: 1px 1px 20px;
+}
+
+#animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Mantém atrás do conteúdo */
+    background: #000;
 }
 
 .box {
     width: 98%;
     height: 870px;
-    background-color: #000000;
-    border: 1px solid #575151;
-    border-radius: 2px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.1)), linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.1));
+    background-size: 10px 10px;
     padding: 17px;
     color: white;
     font-family: Arial, sans-serif;
@@ -49,17 +60,17 @@ body {
 
 .nav-btns {
     justify-content: space-evenly;
-    margin-block-start: -44%;
-    margin-inline-start: 44%;
-    margin-inline-end: 40%;
+    margin-block-start: -45%;
+    margin-inline-start: 66%;
     background: black;
     color: white;
 }
 
 .btn {
     background: #000000;
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: cursive;
+    --bs-btn-bg: #0d6efd00;
 }
 
 .hero {
@@ -82,6 +93,59 @@ body {
 
     .tab-section.active {
         display: block;
-        color: red;
-        margin-block-start: 17%;
     }
+
+.about-description {
+    color: white;
+    margin-inline-start: 48%;
+    margin-block-start: 15%;
+}
+
+.footer {
+    width: 88%;
+    right: 3vh;
+    position: fixed;
+    bottom: 8px;
+}
+
+.temporary {
+    border: 1px solid #575151;
+    position: absolute;
+    margin-block-start: 6%;
+    width: 56%;
+    margin-inline: 25%;
+    padding-block-end: 25%;
+    text-align: justify;
+    white-space: pre-line;
+    color: white;
+    border-top: none;
+    border-left: none;
+}
+
+.line {
+    width: 80%;
+    margin-block-start: 1%;
+    right: -10%;
+    position: relative;
+}
+
+.btn-primary {
+    --bs-btn-bg: #0d6efd00 !important;
+    margin-block-start: 35%;
+    --bs-btn-hover-bg: #0d6efd00 !important;
+    left: 25%;
+    position: sticky;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    border: 1px solid #575151;
+    border-color: #575151 !important;
+    border-radius: var(--bs-border-radius);
+    max-width: 100%;
+    height: auto;
+    width: 16%;
+    margin-block-start: -4%;
+    left: 65%;
+    position: sticky;
+}
