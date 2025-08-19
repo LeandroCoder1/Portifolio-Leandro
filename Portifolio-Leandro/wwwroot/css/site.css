@@ -120,6 +120,7 @@ body {
     color: white;
     border-top: none;
     border-left: none;
+    border-radius: 8px;
 }
 
 .line {
@@ -137,15 +138,14 @@ body {
     position: sticky;
 }
 
-.img-thumbnail {
+.img-thumbnails {
     padding: .25rem;
     border: 1px solid #575151;
     border-color: #575151 !important;
     border-radius: var(--bs-border-radius);
-    max-width: 100%;
-    height: auto;
     width: 16%;
-    margin-block-start: -4%;
+    margin-block-start: -5%;
     left: 65%;
     position: sticky;
+    border-bottom: none;
 }
